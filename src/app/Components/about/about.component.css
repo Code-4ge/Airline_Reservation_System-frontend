@@ -1,0 +1,14 @@
+.aboutbg{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://images2.alphacoders.com/734/thumb-1920-734981.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about{
+  width: 1100px;
+  margin: 50px auto;
+  text-align: justify;
+  font-size: 20px;
+}

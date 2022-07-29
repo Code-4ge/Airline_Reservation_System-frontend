@@ -1,0 +1,18 @@
+.updateflightbg{
+  width: 100vw;
+  height: 100vh;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container h1{
+  margin: 50px 0;
+}
+
+.col{
+  margin: 15px 0;
+}

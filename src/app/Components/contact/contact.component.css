@@ -1,0 +1,40 @@
+.contactbg{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://images2.alphacoders.com/734/thumb-1920-734981.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.contactcard{
+  width: 500px;
+  height: fit-content;
+  padding: 20px;
+  color: whitesmoke;
+  margin: 50px auto 0 auto;
+  background-color: rgba(0, 0, 0, 0.479);
+  border-radius: 5px;
+}
+
+#name,#email,#msg{
+  padding: 5px;
+  margin: 15px 0;
+}
+
+.contactcard input{
+  width: 300px;
+  height: 30px;
+}
+
+.contactcard textarea{
+  width: 300px;
+}
+
+#send_btn{
+  padding: 10px 20px;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  border-radius: 25px;
+}

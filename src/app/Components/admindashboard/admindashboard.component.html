@@ -1,0 +1,48 @@
+<div class="admindashboardbg">
+  <app-navbar></app-navbar>
+  <div class="addflight">
+    <div class="report">
+      <div id="space"></div>
+      <h1>Add Flight Details</h1>
+      <a href="admindashboard/report">Report</a>
+    </div>
+      <form [formGroup]="flightForm" (ngSubmit)="AddFlight()">
+          <input type="text" class="form-control" placeholder="Flight Name" formControlName="flightName" required>
+          <input type="text" class="form-control" placeholder="From" formControlName="from" required>
+          <input type="text" class="form-control" placeholder="To" formControlName="to" required>
+          <input required type="text" class="form-control" placeholder="Flight Date" formControlName="date">
+          <input required type="text" class="form-control" placeholder="Flight Time" formControlName="time">
+          <input type="text" class="form-control" placeholder="Flight Cost" formControlName="cost" required><br/>
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+  </div>
+  <div class="flighttable">
+     <table>
+          <thead>
+              <tr>
+                  <th>Flight Name</th>
+                  <th>From</th>
+                  <th>To</th>
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Cost</th>
+                  <th>Action</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let flight of F_details">
+                  <td>{{flight.flightName}}</td>
+                  <td>{{flight.from}}</td>
+                  <td>{{flight.to}}</td>
+                  <td>{{flight.date}}</td>
+                  <td>{{flight.time}}</td>
+                  <td>{{flight.cost}}</td>
+                  <td>
+                      <a [href]="'admindashboard/updateflight/' + flight.flightId" id="edit_btn">Update</a>&nbsp;
+                      <button id="del_btn" (click)="deleteFlight(flight.flightId)">Delete</button>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+</div>

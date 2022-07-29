@@ -1,0 +1,47 @@
+.userdashboardbg{
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.bookflight form input{
+  margin: 20px;
+  width: 150px;
+  height: 20px;
+}
+
+.bookflight form button{
+  cursor: pointer;
+  background-color: blueviolet;
+  border:none;
+  border-radius: 2px;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.cancelflight button{
+  cursor: pointer;
+  color: maroon;
+  border: 1px solid maroon;
+  border-radius: 2px;
+  background-color: transparent;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 50px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}

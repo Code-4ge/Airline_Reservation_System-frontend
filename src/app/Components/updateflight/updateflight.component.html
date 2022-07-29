@@ -1,0 +1,54 @@
+<div class="updateflightbg">
+  <app-navbar></app-navbar>
+  <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <h1>Update Flight Details</h1>
+            <form [formGroup]="flightForm" (ngSubmit)="UpdateFlight()">
+              <div class="row mt-4">
+                <div class="col">
+                  <label for="name" class="form-label">Flight Name : </label>
+                  <input id="name" type="text" class="form-control" placeholder="Flight Name" formControlName="flightName" required>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col">
+                  <label for="from" class="form-label">Source : </label>
+                  <input to="from" type="text" class="form-control" placeholder="From" formControlName="from" required>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col">
+                  <label for="to" class="form-label">Destination : </label>
+                  <input id="to" type="text" class="form-control" placeholder="To" formControlName="to" required>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col">
+                  <label for="datepicker" class="form-label">Date : </label>
+                  <input required type="text" class="form-control" id="datepicker" placeholder="Flight Date" formControlName="date">
+              </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col">
+                  <label for="time" class="form-label">Time : </label>
+                  <input id="time" type="text" class="form-control" placeholder="Flight Time" formControlName="time" required>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col">
+                  <label for="cost" class="form-label">Cost : </label>
+                  <input id="cost" type="text" class="form-control" placeholder="Flight Cost" formControlName="cost" required>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+

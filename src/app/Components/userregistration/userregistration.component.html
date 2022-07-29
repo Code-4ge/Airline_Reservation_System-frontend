@@ -1,0 +1,13 @@
+<div class="userregistrationbg">
+  <app-navbar></app-navbar>
+  <div class="userregcard">
+      <h2>User Registeration</h2>
+      <form [formGroup]="userRegForm" (ngSubmit)="userRegistration()">
+          <input type="text" name="name" id="name" placeholder="Full Name" formControlName="name"><br/>
+          <input type="text" name="email" id="email" placeholder="Email" formControlName="email"><br/>
+          <input type="password" name="password" id="password" placeholder="Password" formControlName="pass"><br/>
+          <button class="btn btn-primary">Sign Up</button>
+      </form>
+      <p>Already have an Account? <a href="userlogin" style="color: white;">click here</a></p>
+  </div>
+</div>

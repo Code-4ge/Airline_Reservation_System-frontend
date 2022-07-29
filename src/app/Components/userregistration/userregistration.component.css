@@ -1,0 +1,29 @@
+.userregistrationbg{
+  width: 100vw;
+  height: 100vh;
+  background-color: #f5f5f5;
+  overflow: hidden;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwYPU5qcNthnUeoHYbL9b3fJcwlyeeM9lGO9dNmtB0iA&s");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.userregcard{
+  width: 500px;
+  height: fit-content;
+  background-color: #4c00829f;
+  margin: 50px auto 500px auto;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px 5px gray;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.userregcard form input{
+  margin: 20px auto;
+  width: 280px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}

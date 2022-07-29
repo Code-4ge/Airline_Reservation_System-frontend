@@ -1,0 +1,17 @@
+<div class="reportbg">
+  <app-navbar></app-navbar>
+  <table>
+    <thead>
+        <tr>
+            <th>Flight Name</th>
+            <th>Cost</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let flight of flightCost">
+            <td>{{flight.flightName}}</td>
+            <td>{{flight.totalCost}}</td>
+        </tr>
+    </tbody>
+</table>
+</div>

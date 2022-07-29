@@ -1,0 +1,70 @@
+.admindashboardbg{
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+.addflight form input{
+  margin: 20px;
+  width: 150px;
+  height: 20px;
+}
+
+.report{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+.report a{
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#edit_btn{
+  text-decoration: none;
+  border: 1px solid black;
+  color: black;
+  border-radius: 2px;
+  font-weight: bold;
+  padding: 2px 5px;
+}
+
+#del_btn{
+  padding: 2px 5px;
+  border: 1px solid red;
+  color: red;
+  border-radius: 2px;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.addflight form button{
+  cursor: pointer;
+  background-color: blueviolet;
+  border:none;
+  border-radius: 2px;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 50px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}

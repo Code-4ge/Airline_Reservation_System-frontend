@@ -1,0 +1,13 @@
+<nav>
+  <div id="logo"><a href="/">HOME</a></div>
+  <div class="info">
+      <a href="about">About Us</a>
+      <a href="contact">Contact Us</a>
+  </div>
+  <div class="login">
+      <a href="adminlogin" *ngIf="isLoggedin; else logout">Admin Login</a>
+      <ng-template #logout>
+        <a (click)="Logout()" style="cursor: pointer;">Logout</a>
+      </ng-template>
+  </div>
+</nav>

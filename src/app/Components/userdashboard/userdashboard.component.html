@@ -1,0 +1,73 @@
+<div class="userdashboardbg">
+  <app-navbar></app-navbar>
+  <div class="bookflight">
+      <h1>Book A Flight</h1>
+      <form [formGroup]="bookingForm">
+          <input type="text" class="form-control" placeholder="Your Name" formControlName="bookedBy" required>
+          <input type="text" class="form-control" placeholder="Number of seat" formControlName="totalSeat" required>
+          <div class="flighttable">
+              <table>
+                  <thead>
+                      <tr>
+                          <th>Flight Name</th>
+                          <th>From</th>
+                          <th>To</th>
+                          <th>Date</th>
+                          <th>Time</th>
+                          <th>Cost</th>
+                          <th>Action</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr *ngFor="let flight of F_details">
+                          <td>{{flight.flightName}}</td>
+                          <td>{{flight.from}}</td>
+                          <td>{{flight.to}}</td>
+                          <td>{{flight.date}}</td>
+                          <td>{{flight.time}}</td>
+                          <td>{{flight.cost}}</td>
+                          <td>
+                              <button id="book_btn" (click)="BookFlight(flight)">Book</button>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </form>
+  </div>
+  <div class="cancelflight">
+      <h2 style="margin-top: 50px;">Your Booked Flight</h2>
+      <div class="flighttable">
+          <table>
+              <thead>
+                  <tr>
+                      <th>Booked By</th>
+                      <th>Flight Name</th>
+                      <th>From</th>
+                      <th>To</th>
+                      <th>Total Seat</th>
+                      <th>Date</th>
+                      <th>Time</th>
+                      <th>Cost</th>
+                      <th>Action</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr *ngFor="let flight of UF_details">
+                      <td>{{flight.bookedBy}}</td>
+                      <td>{{flight.flightName}}</td>
+                      <td>{{flight.from}}</td>
+                      <td>{{flight.to}}</td>
+                      <td>{{flight.totalSeat}}</td>
+                      <td>{{flight.date}}</td>
+                      <td>{{flight.time}}</td>
+                      <td>{{flight.cost}}</td>
+                      <td>
+                          <button id="cancel_btn" (click)="CancelFlight(flight.bookedId)">Cancel</button>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="adminloginbg">
+  <app-navbar></app-navbar>
+  <div class="admincard">
+      <h2>Admin Login</h2>
+      <form [formGroup]="adminForm" (ngSubmit)="adminLogin()">
+          <input type="text" name="username" id="username" placeholder="Username" formControlName="email"><br/>
+          <input type="password" name="password" id="password" placeholder="Password" formControlName="pass"><br/>
+          <button class="btn btn-primary">Login</button>
+      </form>
+  </div>
+</div>

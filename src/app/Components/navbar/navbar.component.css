@@ -1,0 +1,27 @@
+nav{
+  width: 100vw;
+  height: 50px;
+  background-image: url("https://images2.alphacoders.com/734/thumb-1920-734981.jpg");
+  /* background-color: transparent; */
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info a, .login a{
+  text-decoration: none;
+  color: white;
+  margin: auto 50px;
+}
+
+nav div{
+  margin: auto 20px;
+}
+
+#logo a{
+  cursor: default;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+}
